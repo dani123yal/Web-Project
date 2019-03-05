@@ -2,13 +2,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="homepage" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row homeImage">
+        
+    <div class="head">
+            <div class="homeImage">   
+
+            </div>
     </div>
 
-    <div class="container">
-    <div class="row" style="height: 500px; background-color:green; display:inline-block;">
-        
+    <div class="page">
+        <div class="article">
+        <h1>ARTICLE</h1>
+        </div>
     </div>
-    </div>
+    
     
 </asp:Content>

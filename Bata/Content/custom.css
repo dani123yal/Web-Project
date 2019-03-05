@@ -1,13 +1,17 @@
-﻿.homeImage {
-    background-image: url(https://wallpapercave.com/wp/wp2671835.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    position: absolute;
-    top : 0;
-    z-index : -1;
+﻿html, body{
+     height: 100%;
+    width:100%;
+    color: white;
+}.homeImage {    background-image: url(https://wallpapercave.com/wp/wp2671835.jpg);    background-repeat: no-repeat;    background-size: cover;    min-width: -webkit-fill-available;    height: 100%;    position: absolute;    top: 0;    bottom:0;    z-index: -1;    }
+.head{
+    height: 80%;
 }
+
+.page{
+    position:absolute;
+    top:100%;
+}
+
 
 li.dropdown.show {
     position: static;
@@ -36,4 +40,4 @@ li.dropdown.show {
     height: 50px;
     border-radius: 30px;
     text-align: center;
-}
+}
