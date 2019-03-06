@@ -94,4 +94,10 @@ li.dropdown.show {
     border-radius: 30px;
     text-align: center;
 }
+#navHide {
+    position: fixed;
+    /*top: 0;
+    display: block;*/
+    transition: top 1s;
+}
 
