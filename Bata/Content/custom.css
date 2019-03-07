@@ -57,13 +57,14 @@ li.dropdown.show {
     z-index: -1;    
 }
 .head{
-    height: 80%;
+    height: auto;
+    margin-bottom:50%;
 }
 
-.page{
+/*.page{
     position:absolute;
     top:100%;
-}
+}*/
 
 
 li.dropdown.show {
