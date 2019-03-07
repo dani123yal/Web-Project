@@ -96,8 +96,8 @@ li.dropdown.show {
 }
 #navHide {
     position: fixed;
-    /*top: 0;
-    display: block;*/
+    top: 0;
+    /*display: block;*/
     transition: top 1s;
 }
 
