@@ -101,3 +101,19 @@ li.dropdown.show {
     transition: top 1s;
 }
 
+.container1 {
+    /*margin-top: 8%;*/
+}
+
+.inner1 {
+    /*overflow: hidden;*/
+}
+
+.inner1 img {
+    transition: all 0.3s ease;
+}
+
+.inner1:hover img {
+    transform: scale(1.2);
+} 
+              
