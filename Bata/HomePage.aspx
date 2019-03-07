@@ -25,6 +25,23 @@
         </div>
         <div class="col-md-3"></div>
     </div>
+
+</div>
+        <div class="container">
+<div class="row">
+<div class="col-xs-12" style="width: 100%;"><fieldset class="box-title lang2">
+    <legend align="center">YOUR FAVOURITE STYLES</legend></fieldset></div>
+</div>
+<div class="row">
+<div class="col-md-4">
+    <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/formal.jpg" width="350"; height="350"></div>
+<div class="col-md-4">
+    <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/Casual.jpg" width="350"; height="350"></div>
+<div class="col-md-4">
+    <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/heels.jpg" width="350"; height="350"></div>
+</div>
+</div>
+</div>
         </div>
    <script>
 var myIndex = 0;
