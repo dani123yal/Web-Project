@@ -12,7 +12,7 @@ namespace Bata
 {
     public partial class productDetail : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-C6MPVHD;Initial Catalog=Rough;User ID=sa;Password=12345");
+        DataHandler db = new DataHandler();
         private int id;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -25,18 +25,9 @@ namespace Bata
                 else
                 {
                     id = Convert.ToInt32(Request.QueryString["id"].ToString());
-
-
-                    con.Open();
-                    SqlCommand cmd = con.CreateCommand();
-                    cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = "select * from Products where pId = " + id;
-                    DataTable dt = new DataTable();
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    da.Fill(dt);
-                    prod.DataSource = dt;
+                    string query = "select * from Products where pId = " + id.ToString();
+                    prod.DataSource = db.getData(query);
                     prod.DataBind();
-                    con.Close();
                 }
             }  
         }
@@ -44,17 +35,13 @@ namespace Bata
 
         protected void addToCart(Object sender, EventArgs args)
         {
-            Response.Write("alert('done');");
-            //Response.Redirect("ShoesForm.aspx");
+            id = Convert.ToInt32(Request.QueryString["id"].ToString());
             List<Product> pr = new List<Product>();
             Product product = new Product();
-            con.Open();
-            SqlCommand cmd = con.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from Products where pId = " + id;
+            
+            string query = "select * from Products where pId = " + id;
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(dt);
+            dt = db.getData(query);
 
 
             foreach (DataRow dr in dt.Rows)
@@ -63,9 +50,6 @@ namespace Bata
                 product.imagePath = dr["pImage"].ToString();
                 product.price = dr["pPrice"].ToString();  
             }
-
-            con.Close();
-
             
 
             if(Session["cart"] == null)

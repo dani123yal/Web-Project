@@ -16,6 +16,9 @@ namespace Bata
         protected void Page_Load(object sender, EventArgs e)
         {
             List<Product> pr = (List<Product>)Session["cart"];
+
+            Response.Write("<script>alert('" +pr.Count+ "')</script>");
+
             cart.DataSource = pr;
             cart.DataBind();
             
