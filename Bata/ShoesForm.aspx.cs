@@ -26,5 +26,13 @@ namespace Bata
             datalist.DataBind();
             con.Close();
         }
+
+        protected void datalist_ItemCommand(object source, DataListCommandEventArgs e)
+        {
+            if(e.CommandName == "productDetail")
+            {
+                Response.Redirect("productDetail.aspx?id=" + e.CommandArgument.ToString());
+            }
+        }
     }
 }
