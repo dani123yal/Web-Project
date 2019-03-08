@@ -38,7 +38,7 @@ li.dropdown.show {
     background-image: url(https://wallpapercave.com/wp/wp2671835.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: -webkit-fill-available;
+    width: 100%;
     position: absolute;
     top: 0;
     bottom:0;

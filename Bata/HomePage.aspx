@@ -1,16 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Bata.HomePage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="homepage" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        
-    <div class="head">
+<asp:Content runat="server" ID="Cover" ContentPlaceHolderID="cover">
+<div class="head">
             <div class="homeImage">   
 
                 <p>Scroll down this frame to see the effect!</p>
 
             </div>
     </div>
+</asp:Content>
+<asp:Content ID="homepage" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        
     <div class="page">
 
     <div class="row">
@@ -30,7 +32,7 @@
     </div>
 
 </div>
-        <div class="container">
+
 <div class="row">
 <div class="col-md-12" style="width: 100%; height: 30px; border-bottom: 1px solid black; text-align: center; margin-bottom:50px;">
   <span style="font-size: 40px;background-color:white; color: cadetblue; ">
@@ -46,7 +48,7 @@
 <div class="col-md-4">
     <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/heels.jpg" width="350"; height="350"></div>
 </div>
-</div>
+
    <script>
 var myIndex = 0;
 carousel();

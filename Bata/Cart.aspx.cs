@@ -15,13 +15,18 @@ namespace Bata
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-C6MPVHD;Initial Catalog=Rough;User ID=sa;Password=12345");
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<Product> pr = (List<Product>)Session["cart"];
+            if (Session["cart"] == null)
+            {
+                error.InnerText = "Cart is Empty";
+            }
+            else
+            {
+                List<Product> pr = (List<Product>)Session["cart"];
 
-            Response.Write("<script>alert('" +pr.Count+ "')</script>");
+                cart.DataSource = pr;
+                cart.DataBind();
 
-            cart.DataSource = pr;
-            cart.DataBind();
-            
+            }
         }
     }
 }

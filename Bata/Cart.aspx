@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div style="margin-top:15%"></div>
+    <p id="error" runat="server"></p>
     <asp:Repeater id="cart" runat="server" >
         <HeaderTemplate>
             <table style="top:50px;" border="1" cellpadding="15">
