@@ -94,6 +94,97 @@
 
             </asp:ContentPlaceHolder>
         </div>
+        <footer>
+
+            <div style="background:#F8F8F8; margin-top:15px;">
+           <div class="container">
+	<div class="row">
+
+        <div class="col-md-12">
+    		<div class="thumbnail center well well-sm text-center">
+                <h2>SIGN UP FOR NEWSLETTER</h2>
+                
+                
+                <form action="" method="post" role="form">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="fa fa-envelope"></i>
+                      </span>
+                      <input class="form-control" type="text" id="" name="" placeholder="Enter your email address">
+                    </div>
+                    <input type="submit" value="Subscribe" class="btn btn-large btn-primary" />
+                    
+              </form>
+            </div>    
+        </div>
+	</div>
+               </div>
+</div>
+<!-- FOOTER START -->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>COMPANY INFO</h1>
+    <ul>
+      <li>About Us</li>
+      <li>Media Section</li>
+      <li>Awards & Recognition</li>
+      <li>Careers</li>
+      <li>BATA Shoe Mueseum</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>POLICIES</h1>
+    <ul>
+      <li>Terms & Conditions</li>
+      <li>Payment Options</li>
+      <li>FAQ's</li>
+      <li>Privacy & Policy</li>
+      <li>Term Of Use</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>CUSTOMER SERVICE</h1>
+    <ul>
+      <li>My Account</li>
+      <li>Track Order</li>
+      <li>Site Map</li>
+      <li>Contact Info</li>
+      <li>Write To US</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>WE ACCEPT</h1>
+    <ul>
+      <li>
+          <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/easypaisa.jpg" alt="easypaisa" style="width:75px; height: 55px;" /></li>
+      <li>
+          <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/COD_1_.jpg" alt="cashondelivery" /></li>
+    
+    </ul>
+  </div>
+  <div class="col">
+    <h1>OTHERS</h1>
+    <ul>
+      <li>
+          <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/Jama-Punji_1.jpg" alt="media" style="width:155px; height: 55px;"/></li>
+      <li>
+          <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/secp.jpg" alt="media" style="width:155px; height: 55px;"/></li>
+    </ul>
+  </div>
+<%--  <div class="col social">
+    <h1>Social</h1>
+    <ul>
+      <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+      <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+      <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+    </ul>
+  </div>--%>
+<div class="clearfix"></div>
+</div>
+    <br />
+</div>
+        </footer>
     </form>
    
         
