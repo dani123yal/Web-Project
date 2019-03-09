@@ -251,3 +251,13 @@ input.btn-primary {
     background-color: #f02835;
     border-color: #ed1d24;
 }
+hr.new {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid lightgrey;
+    border-style: double;
+    border-width: 1px;
+} 
