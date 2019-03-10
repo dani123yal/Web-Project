@@ -192,14 +192,14 @@ dummy_page {
 }
 
 @media only screen and (min-width: 1280px) {
-    .contain {
+    .containr {
         width: 1200px;
         margin: 0 auto;
     }
 }
 
 @media only screen and (max-width: 1139px) {
-    .contain .social {
+    .containr .social {
         width: 1000px;
         display: block;
     }
