@@ -36,21 +36,14 @@ namespace Bata
             RepeaterItem item = (sender as LinkButton).NamingContainer as RepeaterItem;
 
             int pid = Convert.ToInt32((item.FindControl("id") as Label).Text);
-            //string pName = (item.FindControl("prodName") as Label).Text;
-            //string pPrice = (item.FindControl("prodPrice") as Label).Text;
-            //string pImage = (item.FindControl("prodImg") as Image).ImageUrl;
 
-            Product delItem = pr.Where<Product>(x=>x.id==pid).Single<Product>();
-            //error.InnerText = "id: " + delItem.id + " name: " + delItem.productName;
-            //int ind = pr.IndexOf(new Product { id =pid, productName=pName, price =pPrice, imagePath= "content/Images/515-2359-c.jpg" });
-            //Response.Write("<script>alert('" + ind+ "');</script>");
+            Product delItem = pr.Where<Product>(x=>x.id==pid).First<Product>();
             pr.Remove(delItem);
 
             //foreach (Product p in pr)
             //{
             //    error.InnerText += "id: " + delItem.id + " name: " + delItem.productName;
             //}
-
             Session["cart"] = pr;
 
             Response.Redirect("Cart.aspx");

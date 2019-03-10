@@ -66,7 +66,7 @@ namespace Bata
                 Session["cart"] = newPr;
             }
 
-            //Response.Redirect();
+            Response.Redirect("productDetail.aspx?id="+id);
         }
 
     }
