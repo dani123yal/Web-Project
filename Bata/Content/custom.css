@@ -118,14 +118,14 @@ li.dropdown.show {
 .pad{
     margin-bottom:10px;
 }
-dummy_page {
+/*dummy_page {
     height: 200px;
     width: 100%;
     background-color: #f0f0f0;
     text-align: center;
     box-sizing: border-box;
     padding: 60px 0px;
-}
+}*/
 /* STYLES SPECIFIC TO FOOTER  */
 .footer {
     width: 100%;
@@ -177,7 +177,7 @@ dummy_page {
 
 .social ul li {
     display: inline-block;
-    padding-right: 5px !important;
+    padding-right: 5px ;
 }
 
 .footer .col ul li:hover {
@@ -250,8 +250,11 @@ input.btn-primary {
     margin-top: 15px;
     background-color: #f02835;
     border-color: #ed1d24;
+    margin-bottom:5px;
+    
 }
-hr.new {
+   
+    hr .new {
     display: block;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
