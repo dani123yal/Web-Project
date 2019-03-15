@@ -21,13 +21,13 @@ nav {
     float: right;
 }
 
-ul {
-}
+/*ul {
+}*/
 
-li {
+/*li {
     display: inline;
     padding-left: 20px;
-}
+}*/
 
 a {
     color: #777777;
@@ -81,7 +81,7 @@ a {
   <div class="contain">
 
     <ul class="navbar-right">
-      <li><a href="Cart.aspx" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span runat="server" id="items" data-count=""  class="badge animated fast wobble">0</span></a></li>
+      <li style="display: inline; padding-left: 20px;"><a href="Cart.aspx" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span runat="server" id="items" data-count=""  class="badge animated fast wobble">0</span></a></li>
     </ul> <!--end navbar-right -->
   </div> <!--end container -->
 </nav>

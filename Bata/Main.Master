@@ -100,17 +100,17 @@
             <div style="background:#F8F8F8; margin-top:15px;">
            <div class="container">
 	<div class="row">
-
-        <div class="col-md-12">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
     		<div class="thumbnail center well well-sm text-center">
                 <h2>SIGN UP FOR NEWSLETTER</h2>
                 
                 
                 <form action="" method="post" role="form">
                     <div class="input-group">
-                      <span class="input-group-addon">
+<%--                      <span class="input-group-addon">
                         <i class="fa fa-envelope"></i>
-                      </span>
+                      </span>--%>
                       <input class="form-control" type="text" id="" name="" placeholder="Enter your email address">
                     </div>
                     <input type="submit" value="Subscribe" class="btn btn-large btn-primary" />
@@ -118,6 +118,8 @@
               </form>
             </div>    
         </div>
+                <div class="col-md-2"></div>
+
 	</div>
                </div>
 </div>
