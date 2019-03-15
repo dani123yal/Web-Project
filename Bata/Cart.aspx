@@ -5,7 +5,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:ScriptManager runat="server" EnablePageMethods="true">
     </asp:ScriptManager>
-    <div style="margin-top:15%"></div>
     <p id="error" runat="server"></p>
     <asp:Repeater id="cart" runat="server" >
         <HeaderTemplate>
