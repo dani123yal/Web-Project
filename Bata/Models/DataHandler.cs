@@ -31,11 +31,12 @@ namespace Bata.Models
                 cmd.CommandText = query;
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
+                con1.Close();
                 return dt;
             }
             catch(Exception e)
             {
-                return null;
+                throw new Exception("connection error");
             }
             
         }

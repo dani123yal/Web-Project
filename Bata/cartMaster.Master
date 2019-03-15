@@ -1,5 +1,7 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="cartMaster.master.cs" Inherits="Bata.cartMaster" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+ 
+    <link href="Content/animate.css" rel="stylesheet" />
     <style>
  
         
@@ -54,7 +56,6 @@ a {
     padding: 3px 7px;
     text-align: center;
     vertical-align: middle;
-    white-space: nowra;
 }
 
     </style>
@@ -81,7 +82,7 @@ a {
   <div class="contain">
 
     <ul class="navbar-right">
-      <li style="display: inline; padding-left: 20px;"><a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span class="badge">0</span></a></li>
+      <li style="display: inline; padding-left: 20px;"><a href="Cart.aspx" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span runat="server" id="items" data-count=""  class="badge animated fast wobble">0</span></a></li>
     </ul> <!--end navbar-right -->
   </div> <!--end container -->
 </nav>
