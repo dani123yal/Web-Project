@@ -125,8 +125,9 @@
 </div>
 <!-- FOOTER START -->
 <div class="footer">
-  <div class="containr">
-  <div class="col">
+  <div class="container">
+      <div class="row">
+  <div class="col" align="center">
     <h1>COMPANY INFO</h1>
     <ul>
       <li>About Us</li>
@@ -136,7 +137,7 @@
       <li>BATA Shoe Mueseum</li>
     </ul>
   </div>
-  <div class="col">
+  <div class="col" align="center">
     <h1>POLICIES</h1>
     <ul>
       <li>Terms & Conditions</li>
@@ -146,7 +147,7 @@
       <li>Term Of Use</li>
     </ul>
   </div>
-  <div class="col">
+  <div class="col" align="center">
     <h1>CUSTOMER SERVICE</h1>
     <ul>
       <li>My Account</li>
@@ -156,7 +157,7 @@
       <li>Write To US</li>
     </ul>
   </div>
-  <div class="col">
+  <div class="col" align="center">
     <h1>WE ACCEPT</h1>
     <ul>
       <li>
@@ -166,7 +167,7 @@
     
     </ul>
   </div>
-  <div class="col">
+  <div class="col" align="center">
     <h1>OTHERS</h1>
     <ul>
       <li>
@@ -175,7 +176,7 @@
           <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/secp.jpg" alt="media" style="width:155px; height: 55px;"/></li>
     </ul>
   </div>
-  <div class="col social">
+  <div class="col social" align="center">
     <h1>Social</h1>
     <ul>
       <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
@@ -183,6 +184,7 @@
       <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
     </ul>
   </div>
+          </div>
 
    
 <div class="clearfix"></div>
@@ -196,18 +198,16 @@
         <div class="col-md-2"></div>
 
     </div>
-
+    <div class="container">
     	<div class="row" style="color:#646464;">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 content ">
+            <div class="col-md-12 content">
                 <h3>BATA - PAKISTAN'S FAVORITE FOOTWEAR BRAND</h3>
 <p>Since 1942 Bata Pakistan has been rendering its services to its valued customers by offering quality products.</p>
 <p>It was incorporated in Pakistan as Bata Shoe Company (Pakistan) Limited in 1951 and went public to become Bata Pakistan Limited in the year 1979.</p>
 <p>Since its inception, the company has not only maintained a good reputation of manufacturing high quality footwear for all segments but has also been designing shoes in accordance with the changing fashions and trends.</p>
             </div>
-                        <div class="col-md-2"></div>
-
             </div>
+        </div>
     <div style="background-color:#ed1d24; margin-top:25px; padding-top:0.5px;padding-bottom:0.5px;">
     <div class="row">
         <div class="col-md-2"></div>

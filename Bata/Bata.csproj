@@ -83,6 +83,7 @@
     <Content Include="Content\Images\561-2264-a.jpg" />
     <Content Include="Content\Images\561-5264-a.jpg" />
     <Content Include="Content\Images\Bata-_1_11.png" />
+    <Content Include="Content\reg.css" />
     <Content Include="HomePage.aspx" />
     <Content Include="productDetail.aspx" />
     <Content Include="Registration.aspx" />
