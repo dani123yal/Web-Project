@@ -112,7 +112,8 @@
                       </span>
                       <input class="form-control" type="text" id="" name="" placeholder="Enter your email address">
                     </div>
-                    <input type="submit" value="Subscribe" class="btn btn-large btn-primary" />
+                    <input type="submit" value="Subscribe" class="btn btn-danger" />
+<%--                <button type="button" class="btn btn-danger">Danger</button>--%>
             </div>    
         </div>
 	</div>
