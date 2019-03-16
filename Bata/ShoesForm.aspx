@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/cartMaster.Master" AutoEventWireup="true" CodeBehind="ShoesForm.aspx.cs" Inherits="Bata.ShoesForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head1" runat="server">
     <style type="text/css">
-        .auto-style2 {
+        /*.auto-style2 {
             margin-top: 300px;
         }
         .auto-style3 {
@@ -14,12 +14,17 @@
             top: 227px;
             padding-left: 15px;
             padding-right: 15px;
-        }
+        }*/
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
         <div class="row">
+
             <div class="col-md-2"></div>
+
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+
             <asp:DataList id="datalist" runat="server" Height="400px" RepeatColumns="3" RepeatDirection="Horizontal" CssClass="auto-style2">
                 <HeaderTemplate>
                         <ul>
@@ -42,10 +47,15 @@
             </FooterTemplate>
         </asp:DataList>
             </div>
+
             <div class="col-md-2">
 
             </div>
         
+
+            
+        </div>
+
 
         <div class="row">
             <div class="col-md-2"></div>

@@ -46,6 +46,7 @@ namespace Bata
 
             foreach (DataRow dr in dt.Rows)
             {
+                product.id = Convert.ToInt32(dr["pId"]);
                 product.productName = dr["pName"].ToString();
                 product.imagePath = dr["pImage"].ToString();
                 product.price = dr["pPrice"].ToString();  
@@ -65,7 +66,7 @@ namespace Bata
                 Session["cart"] = newPr;
             }
 
-            //Response.Redirect();
+            Response.Redirect("productDetail.aspx?id="+id);
         }
 
     }

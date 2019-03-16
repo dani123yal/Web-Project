@@ -26,9 +26,9 @@ namespace Bata.Models
             try
             {
                 con1.Open();
-                SqlCommand cmd = con1.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = query;
+
+                SqlCommand cmd = new SqlCommand(query,con1);
+
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
                 con1.Close();
@@ -36,8 +36,12 @@ namespace Bata.Models
             }
             catch(Exception e)
             {
+
                 return null;
                
+
+                throw new Exception("connection error");
+
             }
             
         }
