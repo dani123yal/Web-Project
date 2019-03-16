@@ -19,8 +19,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
         <div class="row">
+
+            <div class="col-md-2"></div>
+
             <div class="col-md-4"></div>
             <div class="col-md-8">
+
             <asp:DataList id="datalist" runat="server" Height="400px" RepeatColumns="3" RepeatDirection="Horizontal" CssClass="auto-style2">
                 <HeaderTemplate>
                         <ul>
@@ -43,8 +47,15 @@
             </FooterTemplate>
         </asp:DataList>
             </div>
+
+            <div class="col-md-2">
+
+            </div>
+        
+
             
         </div>
+
 
         <div class="row">
             <div class="col-md-2"></div>
