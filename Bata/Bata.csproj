@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cart.aspx" />
+    <Content Include="Checkout.aspx" />
     <Content Include="Content\animate.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -89,6 +90,7 @@
     <Content Include="Content\Images\Bata-_1_11.png" />
     <Content Include="Content\reg.css" />
     <Content Include="HomePage.aspx" />
+    <Content Include="OrderConfirmtion.aspx" />
     <Content Include="productDetail.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -178,6 +180,13 @@
     <Compile Include="cartMaster.Master.designer.cs">
       <DependentUpon>cartMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Checkout.aspx.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Checkout.aspx.designer.cs">
+      <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.aspx.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -195,6 +204,13 @@
     <Compile Include="Models\DataHandler.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="OrderConfirmtion.aspx.cs">
+      <DependentUpon>OrderConfirmtion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderConfirmtion.aspx.designer.cs">
+      <DependentUpon>OrderConfirmtion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="productDetail.aspx.cs">
       <DependentUpon>productDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -60,7 +60,7 @@ namespace Bata.Models
             }
             catch (Exception e)
             {
-                throw new Exception("error" + e.InnerException);
+                throw new Exception("error" + e.ToString());
             }
 
         }
