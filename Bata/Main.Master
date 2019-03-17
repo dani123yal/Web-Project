@@ -63,11 +63,11 @@
                 <div class="px-3 py-4">
                     <div class="form-group">
                     <label for="exampleDropdownFormEmail2">Email address</label>
-                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                    <input type="email" class="form-control" id="credEmail" placeholder="email@example.com" runat="server">
                     </div>
                     <div class="form-group">
                     <label for="exampleDropdownFormPassword2">Password</label>
-                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                    <input type="password" class="form-control" id="credPass" placeholder="Password" runat="server">
                     </div>
                     <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="dropdownCheck2">
@@ -77,7 +77,7 @@
                     </div>
                     <div class="dropdown-divider"></div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
+                        <button type="button" class="btn btn-primary" runat="server" onserverclick="loginCred">Sign in</button>
                     </div>
                     
                 </div>
@@ -220,7 +220,7 @@
     </form>
    
         
-    <%--<script src="Scripts/jquery-3.0.0.min.js"></script>--%>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script>
 var prevScrollpos = window.pageYOffset;

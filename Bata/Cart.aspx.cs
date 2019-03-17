@@ -28,6 +28,7 @@ namespace Bata
                 cart.DataBind();
                 //pr.RemoveAt(ind);
             }
+
         }
 
 

@@ -27,23 +27,23 @@ namespace Bata.Models
             {
                 con1.Open();
 
-                SqlCommand cmd = new SqlCommand(query,con1);
+                SqlCommand cmd = new SqlCommand(query, con1);
 
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da = new SqlDataAdapter(cmd);
                 da.Fill(dt);
                 con1.Close();
                 return dt;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
 
                 return null;
-               
+
 
                 throw new Exception("connection error");
 
             }
-            
+
         }
 
         public void iud(string query)
@@ -56,11 +56,33 @@ namespace Bata.Models
 
                 con1.Close();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw new Exception("error" + e.InnerException);
             }
-            
+
+        }
+
+        public User checkCred(string query)
+        {
+            con1.Open();
+            User user = new User();
+            cmd = new SqlCommand(query, con1);
+            da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con1.Close();
+            if (dt.Rows.Count>0)
+            {
+                user.id = dt.Rows[0].Field<int>("userId");
+                user.username = dt.Rows[0].Field<string>("username");
+                user.email = dt.Rows[0].Field<string>("email");
+                user.password = dt.Rows[0].Field<string>("userPassword");
+
+                return user;
+            }
+
+            return null;
         }
     }
 }
