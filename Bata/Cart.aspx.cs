@@ -50,5 +50,13 @@ namespace Bata
             Response.Redirect("Cart.aspx");
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if(Session["credential_ID"] == null)
+            {
+                Response.Redirect("Registration.aspx");
+            }
+        }
     }
 }
