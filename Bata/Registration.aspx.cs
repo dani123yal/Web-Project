@@ -16,7 +16,7 @@ namespace Bata
             if (!String.IsNullOrEmpty(Request.QueryString["msg"]))
             {
                 // show the message
-                message.Attributes.Add("class","alert alert-success");
+                message.Visible = true;
                 message.InnerText = "successfully registered";
             }
         }
@@ -31,7 +31,7 @@ namespace Bata
             string query = "insert into UserAccount (username,userPassword,email,phoneNo) " +
                 "values('"+username+ "','" + password + "','" + em + "','" + contact + "')";
 
-            //db.iud(query);
+            db.iud(query);
 
             Response.Redirect("Registration.aspx?msg=true");
         }

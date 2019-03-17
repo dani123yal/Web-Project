@@ -50,11 +50,11 @@ namespace Bata.Models
         {
             try
             {
-                con.Open();
-                cmd = new SqlCommand(query, con);
+                con1.Open();
+                cmd = new SqlCommand(query, con1);
                 cmd.ExecuteNonQuery();
 
-                con.Close();
+                con1.Close();
             }
             catch(Exception e)
             {

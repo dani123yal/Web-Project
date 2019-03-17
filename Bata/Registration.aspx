@@ -8,7 +8,7 @@
     
 
         <div class="d-flex justify-content-center" align="center">
-            <div id="message"  style="color:green; font-family:'Letter Gothic Std'; font-size:25px;" runat="server"></div>
+            <div id="message" class="alert alert-success" visible="false" style="color:green; font-family:'Letter Gothic Std'; font-size:25px;" runat="server"></div>
         </div>        
     
     
