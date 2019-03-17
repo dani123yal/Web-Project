@@ -55,6 +55,13 @@
 </div>
     </div>
 
+    <div class="row">
+<div class="col-md-8">
+    <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/women-sec.jpg" width="600"; height="350"></div>
+<div class="col-md-4">
+<%--    <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/heels.jpg" width="350"; height="350"></div>--%>
+</div>
+
    <script>
 var myIndex = 0;
 carousel();

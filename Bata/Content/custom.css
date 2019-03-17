@@ -255,5 +255,7 @@ input.btn-danger {
     border: 1px solid lightgrey;
     border-style: double;
     border-width: 1px;
-} 
-
+}
+.caret{
+    display:none;
+}
