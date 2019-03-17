@@ -19,6 +19,7 @@ namespace Bata
                 message.Visible = true;
                 message.InnerText = "successfully registered";
             }
+
         }
 
         protected void Register(object sender, EventArgs e)
