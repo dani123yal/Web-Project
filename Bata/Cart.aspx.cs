@@ -28,7 +28,7 @@ namespace Bata
                 cart.DataBind();
                 //pr.RemoveAt(ind);
             }
-            error.InnerText = Session["credential"].ToString();
+          //  error.InnerText = Session["credential"].ToString();
         }
 
 
@@ -56,6 +56,10 @@ namespace Bata
             if(Session["credential_ID"] == null)
             {
                 Response.Redirect("Registration.aspx");
+            }
+            else
+            {
+                Response.Redirect("Checkout.aspx");
             }
         }
     }
