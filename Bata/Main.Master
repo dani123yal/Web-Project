@@ -21,7 +21,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <nav id="navHide" class="navbar navbar-expand-lg navbar-light container-fluid" style="background-color:white; border:thick; margin-top:10px; width:100%; font-size:15px; font-family:'Arial'">
+        <nav id="navHide" class="navbar navbar-expand-lg navbar-light container-fluid" style="background-color:white; border:thick; margin-top:10px; width:100%; font-size:15px; font-family:'Arial';border-bottom:2px solid #f02835;">
             <div class="container">
             <img class="navbar-brand" src="content/Images/Bata-_1_11.png" width="10%" />
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -96,33 +96,29 @@
 
             </asp:ContentPlaceHolder>
         </div>
-        <footer>
+        <footer style="padding-top:30px; ">
 
             <div style="background:#F8F8F8; margin-top:15px;">
-           <div class="container">
+          <div class="container" style="padding-top:30px;">
 	<div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
+        <div class="col-md-12">
     		<div class="thumbnail center well well-sm text-center">
-                <h2>SIGN UP FOR NEWSLETTER</h2>
+                <h2>Sign up for Newsletter!</h2>
                 
+
                 
-                <form action="" method="post" role="form">
                     <div class="input-group">
-<%--                      <span class="input-group-addon">
+                      <span class="input-group-addon">
                         <i class="fa fa-envelope"></i>
-                      </span>--%>
+                      </span>
                       <input class="form-control" type="text" id="" name="" placeholder="Enter your email address">
                     </div>
-                    <input type="submit" value="Subscribe" class="btn btn-large btn-primary" />
-                    
-              </form>
+                    <input type="submit" value="Subscribe" class="btn btn-danger" />
+<%--                <button type="button" class="btn btn-danger">Danger</button>--%>
             </div>    
         </div>
-                <div class="col-md-2"></div>
-
 	</div>
-               </div>
+</div>
 </div>
 <!-- FOOTER START -->
 <div class="footer">
@@ -200,7 +196,7 @@
 
     </div>
     <div class="container">
-    	<div class="row" style="color:#646464;">
+    	<div class="row" style="color:#646464; "align="center";>
             <div class="col-md-12 content">
                 <h3>BATA - PAKISTAN'S FAVORITE FOOTWEAR BRAND</h3>
 <p>Since 1942 Bata Pakistan has been rendering its services to its valued customers by offering quality products.</p>

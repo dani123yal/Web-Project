@@ -1,4 +1,6 @@
-
+body{
+    background-color:#ffffff;
+}
 li.dropdown.show {
     position: static;
 }
@@ -119,20 +121,14 @@ li.dropdown.show {
 .pad{
     margin-bottom:10px;
 }
-/*dummy_page {
-    height: 200px;
-    width: 100%;
-    background-color: #f0f0f0;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 60px 0px;
-}*/
+
 /* STYLES SPECIFIC TO FOOTER  */
 .footer {
     width: 100%;
     position: relative;
     height: auto;
-    background-color: #F8F8F8;
+    background-color:#F8F8F8;
+    
 }
 
     .footer .col {
@@ -243,14 +239,9 @@ li.dropdown.show {
         width: 100%;
     }
 }
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
-@import url(//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css);
 
-
-input.btn-primary {
+input.btn-danger {
     margin-top: 15px;
-    background-color: #f02835;
-    border-color: #ed1d24;
     margin-bottom:5px;
     
 }
@@ -266,7 +257,3 @@ input.btn-primary {
     border-width: 1px;
 } 
 
-.button{
-
-
-}

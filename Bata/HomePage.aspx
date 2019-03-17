@@ -15,16 +15,15 @@
         
     <div class="page">
 
-    <div class="row">
+    <div class="row" align="centre;">
 <%--        <div class="col-md-2"></div>--%>
         <div class="col-md-12">
             <div class="w3-content w3-section" style="max-width:5000px">
-
-  <img class="mySlides w3-animate-fading" src="https://i.ytimg.com/vi/QF3NAIFjXGg/maxresdefault.jpg"  style="width:1100px;height:500px">
-  <img class="mySlides w3-animate-fading" src="https://pbs.twimg.com/media/DcVtL3vW0AAd6HL.jpg" style="width:1100px;height:500px">
+ 
+ <img class="mySlides w3-animate-fading" src="Content/Images/add1.PNG" style="width:1100px;height:500px">
+<img class="mySlides w3-animate-fading" src="https://i.ytimg.com/vi/QF3NAIFjXGg/maxresdefault.jpg"  style="width:1100px;height:500px">
   <img class="mySlides w3-animate-fading" src="https://www.bata.in/0/media/css/frontend/octa/images/casual-collection-02.jpg" style="width:1100px;height:500px">
   <img class="mySlides w3-animate-fading" src="http://actfaqs.com/uploads/KritiBataM-533x261.jpg" style="width:1100px;height:500px">
-
 </div>
 
         </div>
@@ -55,6 +54,7 @@
   </span>
 </div>
     </div>
+
    <script>
 var myIndex = 0;
 carousel();
