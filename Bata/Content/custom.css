@@ -256,4 +256,6 @@ input.btn-danger {
     border-style: double;
     border-width: 1px;
 }
-
+.caret{
+    display:none;
+}

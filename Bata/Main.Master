@@ -83,7 +83,14 @@
                 </div>
             </div>
        </li>
-     
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle dropdo"#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="text-decoration:underline; ">Username</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown03" style="margin-left:1250px;">
+          <a class="dropdown-item" href="#">History</a>
+          <a class="dropdown-item" href="#">Accounts</a>
+          <a class="dropdown-item" href="#">Logout</a>
+        </div>
+      </li>
      
     </ul>
   </div>
