@@ -15,7 +15,7 @@ namespace Bata
         DataHandler db = new DataHandler();
         protected void Page_Load(object sender, EventArgs e)
         {
-            string query = "select * from Products";
+            string query = "select * from Shoes";
             datalist.DataSource = db.getData(query);
             datalist.DataBind();
         }

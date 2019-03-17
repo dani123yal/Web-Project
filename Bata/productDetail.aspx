@@ -54,15 +54,15 @@
                     <div class="col-md-4">
                         <div class="card-shadow" style="">
                             <div class="inner1">
-                                <img class="card-body-top" src="<%#Eval("pImage")%>" width="75%" />
+                                <img class="card-body-top" src="<%#Eval("shoeImage")%>" width="75%" />
                             </div>
                         </div>
                         <%--             <div class="magnify-lens" data-gallery-role="magnifier-zoom" style="width: 377px; height: 519px; left: 182.5px; top: 77.5px;"></div>--%>
                     </div>
                     <div class="col-md-6" style="border-style: solid; border-width: 1px; border-color: darkgray;">
 
-                        <h1 class="pad"><%# Eval("pName")%></h1>
-                        <h3 class="pad"><%# Eval("pPrice")%></h3>
+                        <h1 class="pad"><%# Eval("shoeName")%></h1>
+                        <h3 class="pad"><%# Eval("shoePrice")%></h3>
                         <h6 class="pad">Color <span style="font-size: 12px">Black</span></h6>
                         <div></div>
 
