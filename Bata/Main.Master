@@ -11,7 +11,8 @@
     <link href="content/custom.css" rel="stylesheet" />
     <link href="content/animate.css" rel="stylesheet" />
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <%--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />--%>
+    <link href="Content/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <title>BATA SHOE 
     </title>
 
@@ -223,7 +224,7 @@
     </form>
    
         
-    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <%--<script src="Scripts/jquery-3.0.0.min.js"></script>--%>
     <script src="Scripts/bootstrap.min.js"></script>
     <script>
 var prevScrollpos = window.pageYOffset;
@@ -237,7 +238,7 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 </script>
-    
+    <script src="Scripts/popper.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ namespace Bata.Models
 
         public DataHandler()
         {
-            con = new SqlConnection("Data Source=DESKTOP-C6MPVHD;Initial Catalog=Rough;User ID=sa;Password=12345");
+            con = new SqlConnection("Data Source=DESKTOP-C6MPVHD;Initial Catalog=BataShoeStore;User ID=sa;Password=12345");
             con1 = new SqlConnection("workstation id=TestDatabase1.mssql.somee.com;packet size=4096;user id=dani123_SQLLogin_1;pwd=56b4sfiebb;data source=TestDatabase1.mssql.somee.com;persist security info=False;initial catalog=TestDatabase1");
         }
 
@@ -42,6 +42,23 @@ namespace Bata.Models
 
                 throw new Exception("connection error");
 
+            }
+            
+        }
+
+        public void iud(string query)
+        {
+            try
+            {
+                con.Open();
+                cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+            }
+            catch(Exception e)
+            {
+                throw new Exception("error" + e.InnerException);
             }
             
         }
