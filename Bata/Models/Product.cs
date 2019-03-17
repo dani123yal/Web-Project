@@ -30,5 +30,9 @@ namespace Bata.Models
         [DataType(DataType.Currency)]
         public string price { get; set; }
 
+        public string productType { get; set; }
+
+        public string productCategory { get; set; }
+
     }
 }

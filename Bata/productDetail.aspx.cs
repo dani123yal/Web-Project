@@ -25,7 +25,7 @@ namespace Bata
                 else
                 {
                     id = Convert.ToInt32(Request.QueryString["id"].ToString());
-                    string query = "select * from Products where pId = " + id.ToString();
+                    string query = "select * from Shoes where shoeId = " + id.ToString();
                     prod.DataSource = db.getData(query);
                     prod.DataBind();
                 }
@@ -39,17 +39,17 @@ namespace Bata
             List<Product> pr = new List<Product>();
             Product product = new Product();
             
-            string query = "select * from Products where pId = " + id;
+            string query = "select * from Shoes where shoeId = " + id;
             DataTable dt = new DataTable();
             dt = db.getData(query);
 
 
             foreach (DataRow dr in dt.Rows)
             {
-                product.id = Convert.ToInt32(dr["pId"]);
-                product.productName = dr["pName"].ToString();
-                product.imagePath = dr["pImage"].ToString();
-                product.price = dr["pPrice"].ToString();  
+                product.id = Convert.ToInt32(dr["shoeId"]);
+                product.productName = dr["shoeName"].ToString();
+                product.imagePath = dr["shoeImage"].ToString();
+                product.price = dr["shoePrice"].ToString();  
             }
             
 
