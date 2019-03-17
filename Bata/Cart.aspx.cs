@@ -28,7 +28,7 @@ namespace Bata
                 cart.DataBind();
                 //pr.RemoveAt(ind);
             }
-
+            error.InnerText = Session["credential"].ToString();
         }
 
 

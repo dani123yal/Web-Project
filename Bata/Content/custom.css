@@ -12,6 +12,9 @@ li.dropdown.show {
         left: 0;
         right: 0;
     }
+.dropdown.show .dropdownAcc{
+
+}
 
 .dropdown-menu {
     height: auto;
