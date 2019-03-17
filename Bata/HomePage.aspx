@@ -16,7 +16,6 @@
     <div class="page">
 
     <div class="row" align="centre;">
-<%--        <div class="col-md-2"></div>--%>
         <div class="col-md-12">
             <div class="w3-content w3-section" style="max-width:5000px">
  
@@ -27,7 +26,6 @@
 </div>
 
         </div>
-<%--        <div class="col-md-1"></div>--%>
     </div>
 
 </div>
@@ -54,14 +52,27 @@
   </span>
 </div>
     </div>
-
-    <div class="row">
-<div class="col-md-8">
-    <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/women-sec.jpg" width="600"; height="350"></div>
-<div class="col-md-4">
-<%--    <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/heels.jpg" width="350"; height="350"></div>--%>
+    <div class="row" >
+<div class="col-md-7">
+    <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/women-sec.jpg" width="600"; height="400"></div>
+<div class="col-md-5">
+    <div class="cabinet-list table-cell">
+<h3>Shop by categories</h3>
+<ul>
+<li ><a title="Closed Shoes" href="#">Athletics</a></li>
+<li><a title="Sports" href="#">Casual </a></li>
+<li><a title="Sandals" href="# "> Comfort </a></li>
+<%--<li><a title="Chappals" href="/women/fashion.html "> Fashion </a></li>--%>
+</ul>
+<h3>Trend of the week</h3>
+<div class="custom thumbnail">
+<ul>
+<li id="banner_1" class="first"><a class="blogImageLeft fullWidth" href="#" > <img src="https://www.bata.com.pk/pub/media/wysiwyg/em0144/layout_gentleman/home/women-blog.jpg" alt="" width="350"; height="250" > </a></li>
+</ul>
 </div>
-
+</div>
+</div>
+        </div>
    <script>
 var myIndex = 0;
 carousel();

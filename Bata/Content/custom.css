@@ -256,6 +256,41 @@ input.btn-danger {
     border-style: double;
     border-width: 1px;
 }
-.caret{
-    display:none;
+.cabinet-list.table-cell {
+    width: 25%;
+    vertical-align: top;
+    display: table-cell;
+    padding-right: 30px;
+   
+}
+.custom.thumbnail {
+    display: block;
+    padding: 0;
+    /* margin-bottom: 0; */
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: none;
+    border-radius: inherit;
+    position: relative;
+}
+  
+.cabinet-list h3 {
+    font-size: 20px;
+    color: #6e6e6e;
+    padding-bottom: 3px;
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #000;
+    font-weight: 400;
+   
+}
+.cabinet-list ul li a {
+    color: #6e6e6e;
+    font-size: 18px;
+    line-height: 20px;
+}
+.cabinet-list ul {
+    margin-bottom: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
