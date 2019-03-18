@@ -14,7 +14,7 @@
     <br />
     <asp:Repeater id="cart" runat="server" >
         <HeaderTemplate>
-            <table id="tbl" style="top:50px;" border="1" cellpadding="15">
+            <table id="tbl" style="top:50px;" border="1" cellpadding="30">
                <thead>
                     <td>
                         Name
@@ -41,7 +41,7 @@
                         <asp:Label runat="server" ID="prodPrice" Text='<%# Eval("price") %>' />
                     </td>
                     <td>
-                        <img id="prodImg" src="<%# Eval("imagePath") %>" alt="image" width="20%" />
+                        <img id="prodImg" src="<%# Eval("imagePath") %>" alt="image" width="100px" />
                     </td>
                     <td>
                         <asp:LinkButton runat="server" class="btn btn-danger"><i class="fa fa-trash-o"></i> Remove</asp:LinkButton>

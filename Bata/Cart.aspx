@@ -8,7 +8,7 @@
     <p id="error" runat="server"></p>
     <asp:Repeater id="cart" runat="server" >
         <HeaderTemplate>
-            <table id="tbl" style="top:50px;" border="1" cellpadding="15">
+            <table id="tbl" style="top:50px;" border="1" cellpadding="30">
                <thead>
                     <td>
                         Name
@@ -35,7 +35,7 @@
                         <asp:Label runat="server" ID="prodPrice" Text='<%# Eval("price") %>' />
                     </td>
                     <td>
-                        <img id="prodImg" src="<%# Eval("imagePath") %>" alt="image" />
+                        <img id="prodImg" src="<%# Eval("imagePath") %>" alt="image" width="100px"/>
                     </td>
                     <td>
                         <asp:LinkButton runat="server" onclick="delete" class="btn btn-danger"><i class="fa fa-trash-o"></i> Remove</asp:LinkButton>
