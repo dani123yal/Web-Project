@@ -3,10 +3,7 @@
 </asp:Content>
 <asp:Content runat="server" ID="Cover" ContentPlaceHolderID="cover">
 <div class="head">
-            <div class="homeImage">   
-
-                <p>Scroll down this frame to see the effect!</p>
-
+            <div class="homeImage">
             </div>
     </div>
 </asp:Content>

@@ -15,7 +15,20 @@ namespace Bata
         DataHandler db = new DataHandler();
         protected void Page_Load(object sender, EventArgs e)
         {
-            string query = "select * from Shoes";
+            string category = "";
+            if (Request.QueryString["cat"]=="men")
+            {
+                category = "Men";
+            }
+            else if (Request.QueryString["cat"] == "women")
+            {
+                category = "Women";
+            }
+            if (Request.QueryString["cat"] == "kids")
+            {
+                category = "Kids";
+            }
+            string query = "select * from Shoes where shoeCategory = '"+category+"'";
             datalist.DataSource = db.getData(query);
             datalist.DataBind();
         }
