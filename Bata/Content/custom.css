@@ -100,21 +100,19 @@ li.dropdown.show {
     /*display: block;*/
     transition: top 1s;
 }
-
 .container1 {
     /*margin-top: 8%;*/
 }
 
 .inner1 {
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
-
 .inner1 img {
-    transition: all 0.3s ease;
+    /*transition: all 1.5s ease;*/
 }
-
-.inner1:hover img {
-    transform: scale(1.2);
+.inner1:hover img  {
+    transform: scale(1.9);
+        
 }
 .pad{
     margin-bottom:10px;
@@ -269,4 +267,21 @@ input.btn-primary {
 .button{
 
 
+}
+    .magnify-hidden {
+        display: none;
+    }
+
+.magnifier-large {
+    position:absolute;
+    width: 32%;
+    z-index: 100;
+}
+
+        .magnifier-preview {
+        width: 200px !important;
+        left: 120px !important;
+    }
+ .magnifier-preview:not(.hidden) {
+    background-color: #fff;
 }
