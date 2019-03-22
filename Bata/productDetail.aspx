@@ -127,28 +127,26 @@
                                     <span class="sr-only">Next</span>
                                   </a>
                                 </div>
-                 
-                        </div>
-                        <%--             <div class="magnify-lens" data-gallery-role="magnifier-zoom" style="width: 377px; height: 519px; left: 182.5px; top: 77.5px;"></div>--%>
-                    </div>
-                  
+                            </div>
+                  </div>
                     <div class="col-md-5" style="border-style:hidden; border-width: 1px; border-color: darkgray;">
 
                         <div class="page-title-wrapper product">
                         <h1 class="page-title">
-                   <span class="base" data-ui-id="page-title-wrapper" itemprop="name"><%# Eval("pName")%></span>
+                   <span class="base" data-ui-id="page-title-wrapper" itemprop="name"><%# Eval("shoeName")%></span>
                             </h1> 
              <div class="product-info-stock-sku">
                     <div class="product attribute sku">
-                  <strong class="type">SKU</strong><div class="value" itemprop="sku"><%# Eval("pName")%></div>
+                  <strong class="type">SKU</strong><div class="value" itemprop="sku"></div>
               </div>
      
                 </div>
             </div>
 
 
-             <span class="price"><br>PKR <%# Eval("pPrice")%> </span>
+             <span class="price pad"><br>PKR <%# Eval("shoePrice")%> </span>
                         
+
 
                         <div> <br />
                         <span class="swatch-attribute-label">Color</span>

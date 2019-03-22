@@ -19,25 +19,22 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
         <div class="row">
-
-            <div class="col-md-2"></div>
-
             <div class="col-md-4"></div>
             <div class="col-md-8">
 
-            <asp:DataList id="datalist" runat="server" Height="400px" RepeatColumns="3" RepeatDirection="Horizontal" CssClass="auto-style2">
+            <asp:DataList id="datalist" runat="server" Height="400px" RepeatColumns="3" RepeatDirection="Horizontal" CssClass="auto-style2" CellPadding="25">
                 <HeaderTemplate>
                         <ul>
                 </HeaderTemplate>
                 <ItemTemplate>
                 <li class="last" style="list-style:none;">    
                     <div class="image">
-                        <a href="productDetail.aspx?id=<%#Eval("pId")%>"><img src="<%#Eval("pImage")%>"  alt="Alternate Text" width="100%" /></a>
+                        <a href="productDetail.aspx?id=<%#Eval("shoeId")%>"><img src="<%#Eval("shoeImage")%>"  alt="Alternate Text" width="100%" /></a>
                     </div>
                     <div class="info text-center">
-                        <h3><%#Eval("pName")%></h3>
+                        <h3><%#Eval("shoeName")%></h3>
                         <strong>
-                            <h3><%#Eval("pPrice")%></h3>
+                            <h3><%#Eval("shoePrice")%></h3>
                         </strong>
                     </div>
                 </li>
@@ -47,13 +44,6 @@
             </FooterTemplate>
         </asp:DataList>
             </div>
-
-            <div class="col-md-2">
-
-            </div>
-        
-
-            
         </div>
 
 

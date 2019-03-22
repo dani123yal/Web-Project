@@ -5,24 +5,41 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cover" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    
+
+        <div class="d-flex justify-content-center" align="center">
+            <div id="message" class="alert alert-success" visible="false" style="color:green; font-family:'Letter Gothic Std'; font-size:25px;" runat="server"></div>
+        </div>        
+    
+    
     <div class="form_wrapper">
   <div class="form_container">
     <div class="title_container">
       <h2>Registration</h2>
     </div>
-    <div class="row clearfix">
+    <div class="clearfix">
       <div class="">
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+            <input type="text" id="uName" placeholder="Username" required runat="server"/>
+          </div>
           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-            <input type="email" name="email" placeholder="Email" required />
+            <input type="email" id="email" placeholder="Email" required runat="server"/>
           </div>
           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-            <input type="password" name="password" placeholder="Password" required />
+            <input type="password" id="pass" placeholder="Password" required runat="server"/>
           </div>
           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-            <input type="password" name="password" placeholder="Re-type Password" required />
+            <input type="password" id="rePass" onchange="checkPassword()" onkeyup="checkPassword()" 
+                placeholder="Re-type Password" required />
+              <p id="error" class="float-right" style="font-size:10px;"></p>
           </div>
-          <div class="row clearfix">
-            <div class="col_half">
+          <div class="clearfix">
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+            <input type="tel" id="phone" pattern="[0-9]{4}-[0-9]{7}" title="use this:(xxxx-xxxxxxx)" placeholder="Phone No." maxlength="14" required runat="server"/>
+          </div>
+              </div>
+          <%--<div class="row clearfix">
+            <div class="col_half">  
               <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
                 <input type="text" name="name" placeholder="First Name" />
               </div>
@@ -32,39 +49,26 @@
                 <input type="text" name="name" placeholder="Last Name" required />
               </div>
             </div>
-          </div>
-            	<div class="input_field radio_option">
-              <input type="radio" name="radiogroup1" id="rd1">
-              <label for="rd1">Male</label>
-              <input type="radio" name="radiogroup1" id="rd2">
-              <label for="rd2">Female</label>
-              </div>
-              <div class="input_field select_option">
-                <select>
-                  <option>Select a city</option>
-                  <option>Karachi</option>
-                  <option>Lahore</option>
-                  <option>Islamabad</option>                  
-                    <option>Rawalpindi</option>                  
-                    <option>Multan</option>                  
-                    <option>Hyderabad</option>                  
-                    <option>Sialkot</option>                  
-                    <option>Pehawar</option>
-
-             </select>
-                <div class="select_arrow"></div>
-              </div>
-            <div class="input_field checkbox_option">
-            	<input type="checkbox" id="cb1">
-    			<label for="cb1">I agree with terms and conditions</label>
-            </div>
-            <div class="input_field checkbox_option">
-            	<input type="checkbox" id="cb2">
-    			<label for="cb2">I want to receive the newsletter</label>
-            </div>
-          <input class="button" type="submit" value="Register" />
+          </div>--%>
+          <input class="button" type="submit" value="Register" runat="server" onserverclick="Register" />
       </div>
     </div>
   </div>
 </div>
+
+    <script type="text/javascript">
+        function checkPassword() {
+            var pas = document.getElementById("<%=pass.ClientID%>").value;
+            var rePas = document.getElementById("rePass").value;
+
+            if (pas == rePas) {
+                document.getElementById("error").style.color = "green";
+                document.getElementById("error").innerText = "Password match!";
+            }
+            else {
+                document.getElementById("error").style.color = "red";
+                document.getElementById("error").innerText = "Password doesn't match";
+            }
+        }
+    </script>
 </asp:Content>
