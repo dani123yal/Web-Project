@@ -56,6 +56,9 @@ a {
     text-align: center;
     vertical-align: middle;
 }
+.cart-wrap{
+    padding-bottom: 5px;
+}
 
     </style>
     <%-- header of this page --%>
@@ -68,7 +71,7 @@ a {
 
    
         <%-- body of this page --%>
-        <div>
+        <div class="cart-wrap">
 <%--                            <div style="margin-bottom:100px">
 
             <div class="navbar" style="width:100%; height:25%; background-color: dimgrey;">

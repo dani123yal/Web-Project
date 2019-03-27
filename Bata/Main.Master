@@ -23,7 +23,7 @@
     <form id="form1" runat="server">
         <nav id="navHide" class="navbar navbar-expand-lg navbar-light container-fluid" style="background-color:white; border:thick; margin-top:10px; width:100%; font-size:15px; font-family:'Arial';border-bottom:2px solid #f02835;">
             <div class="container">
-            <img class="navbar-brand" src="content/Images/Bata-_1_11.png" width="10%" />
+               <img class="navbar-brand" src="content/Images/Bata-_1_11.png" width="10%" />
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

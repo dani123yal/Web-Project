@@ -28,6 +28,12 @@ namespace Bata
                     string query = "select * from Shoes where shoeId = " + id.ToString();
                     prod.DataSource = db.getData(query);
                     prod.DataBind();
+
+                    query = "select * from ShoeGallery where shoeId = " + id.ToString();
+                    img.DataSource = db.getData(query);
+                    img.DataBind();
+                    carousel.DataSource = img.DataSource;
+                    carousel.DataBind();
                 }
             }  
         }
@@ -51,9 +57,13 @@ namespace Bata
                 product.imagePath = dr["shoeImage"].ToString();
                 product.price = dr["shoePrice"].ToString();  
             }
-            
 
-            if(Session["cart"] == null)
+            product.productSize = size.Value;
+
+            product.qty = Convert.ToInt32(qty.Value);
+            product.total = (Convert.ToDouble(product.price) * product.qty);
+
+            if (Session["cart"] == null)
             {
                 pr.Add(product);
                 Session["cart"] = pr;

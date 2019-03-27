@@ -19,7 +19,7 @@ namespace Bata
             string query="";
             if(Request.QueryString["search"] != null)
             {
-                filterDiv.Visible = false;
+                //filterDiv.Visible = false;
                 query = "select * from Shoes where shoeName like('%" + Request.QueryString["search"] + "%') or shoeType like('%" + Request.QueryString["search"] + "%')";
             }
             else
@@ -45,8 +45,8 @@ namespace Bata
 
             string filterQuery = "select distinct(shoeType) from Shoes where shoeCategory = '" + category+"'";
 
-            filterr.DataSource = db.getData(filterQuery); ;
-            filterr.DataBind();
+            //filterr.DataSource = db.getData(filterQuery); ;
+            //filterr.DataBind();
 
 
         }

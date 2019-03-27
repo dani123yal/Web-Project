@@ -43,7 +43,7 @@ namespace Bata
             foreach(Product p in (List<Product>)Session["cart"])
             {
                 
-                 total +=float.Parse(p.price);
+                 total += (float.Parse(p.price) * p.qty);
                // Response.Write("<script>alert('"+p.price+"')</script>");
             }
 
@@ -56,9 +56,9 @@ namespace Bata
 
            foreach(Product p in (List<Product>)Session["cart"])
             {
-                dt.iud("insert into orderdetail(ordid,shoeid,quantity,size) values("+ordID.ToString()+","+p.id.ToString()+",1,10)");
+                dt.iud("insert into orderdetail(ordid,shoeid,quantity,size) values("+ordID.ToString()+","+p.id.ToString()+","+p.qty+","+p.productSize+")");
             }
-            Response.Redirect("OrderConfirmtion.aspx");
+            Response.Redirect("OrderConfirmtion.aspx?id="+(userID+ordID)+"&total="+totalString);
         }
     }
 }

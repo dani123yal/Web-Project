@@ -34,5 +34,12 @@ namespace Bata.Models
 
         public string productCategory { get; set; }
 
+        public string productSize { get; set; }
+
+        public int qty { get; set; }
+
+        [DataType(DataType.Currency)]
+        public double total { get; set; }
+
     }
 }
