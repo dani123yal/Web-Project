@@ -19,9 +19,26 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
         <div class="row">
-            <div class="col-md-4"></div>
+            <div class="col-md-4" align="center">
+                <div class="filter-container" align="center" runat="server" id="filterDiv">
+                    <div class="filter">
+                        <div class="inner-filter">
+                            <h3 class="text-center">TYPE</h3>
+                            <asp:DataList runat="server" id="filterr" RepeatDirection="Vertical">
+                                <itemTemplate>
+                                    <asp:CheckBox CssClass="checkbox" Text='<%#Eval("shoeType")%>' runat="server" AutoPostBack="true" OnCheckedChanged="filterCheck"/>
+                                </itemTemplate>
+                            </asp:DataList>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <div class="inner-filter">
+                            <asp:Label CssClass="text-center" Text='TYPE' runat="server" />
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-8">
-
             <asp:DataList id="datalist" runat="server" Height="400px" RepeatColumns="3" RepeatDirection="Horizontal" CssClass="auto-style2" CellPadding="25">
                 <HeaderTemplate>
                         <ul>

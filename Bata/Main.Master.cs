@@ -30,17 +30,22 @@ namespace Bata
             {
                 msg.Visible = true;
             }
-            
-        }
 
-        protected void test(object sender, EventArgs e) {
-            
+            //string path = this.Page.Request.Url.ToString();
+            //int i = path.LastIndexOf('?');
+            //if (i > 0)
+            //{
+            //    string newPath = path.Remove(i);
+            //    Response.Write("<script>alert('"+newPath+"')</script>");
+            //}
         }
 
         protected void loginCred(object sender, EventArgs e)
         {
             //Response.Write("<script>alert('done')</script>");
             string path = this.Page.Request.FilePath;
+
+
             string email = credEmail.Value;
             string pass = credPass.Value;
 
@@ -50,14 +55,32 @@ namespace Bata
             User user = db.checkCred(query);
             if (user == null)
             {
-                Response.Redirect(path + "?failed=true");
+                if (Request.QueryString["cat"] != null)
+                {
+                    path += "?cat=" + Request.QueryString["cat"];
+                    Response.Redirect(path + "&failed=true");
+                }
+                else
+                {
+                    Response.Redirect(path + "?failed=true");
+                }
+                
             }
             else
             {
                 Session["credential_ID"] = user.id;
                 Session["credential"] = user.username;
 
-                Response.Redirect(path);
+                if (Request.QueryString["cat"] != null)
+                {
+                    path += "?cat=" + Request.QueryString["cat"];
+                    Response.Redirect(path);
+                }
+                else
+                {
+                    Response.Redirect(path);
+                }
+                
             }
             
             
@@ -69,9 +92,18 @@ namespace Bata
             Session["credential"] = null;
             Session["credential_ID"] = null;
 
-            string path = this.Page.Request.FilePath;
+            string path = this.Page.Request.Url.ToString();
 
             Response.Redirect(path);
+        }
+
+
+        protected void searchProduct(object sender, EventArgs e)
+        {
+            string toFind = search.Value;
+
+            Response.Redirect("ShoesForm.aspx?search="+toFind);
+
         }
     }
 }

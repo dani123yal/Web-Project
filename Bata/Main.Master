@@ -52,9 +52,12 @@
         <a class="nav-link" href="#" style="padding-left:20px" id="searchDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Search
         </a>
+          <asp:Panel runat="server" DefaultButton="btn">
           <div class="dropdown-menu dropdown-menu-xl-right search animated fadeInDown" aria-labelledby="searchDropDown" role="menu">
-              <input type="search" name="name" value="" placeholder="Search"/>
+                <input type="search" id="search" name="name" runat="server" value="" placeholder="Search" />
+          <asp:Linkbutton id="btn" style="visibility:hidden;" runat="server" OnClick="searchProduct"/>
           </div>
+          </asp:Panel>
       </li>
         
       <li class="nav-item dropdown" id="loginDD" runat="server">

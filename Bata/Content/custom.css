@@ -1,5 +1,6 @@
-body{
-    background-color:#ffffff;
+body {
+    background-color: #ffffff;
+    padding-top: 70px;
 }
 /*li.dropdown.show {
     position: static;
@@ -35,7 +36,6 @@ body{
      height: 100%;
     width:100%;
     color: white;
-    padding-top: 65px;
 }
 
 .homeImage {
@@ -332,5 +332,23 @@ input.btn-danger {
     display: inline-block;
     font-weight: bold;
     border-bottom: 1px solid;
+}
+
+
+.filter-container{
+    border: 1px solid silver;
+    padding: 10px;
+}
+
+.inner-filter{
+
+}
+
+.checkbox input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.btnSear{
+    display:none;
 }
 

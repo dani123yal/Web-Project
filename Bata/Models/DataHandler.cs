@@ -39,10 +39,7 @@ namespace Bata.Models
             catch (Exception e)
             {
 
-                return null;
-
-
-                throw new Exception("connection error");
+                throw new Exception("error" + e.ToString());
 
             }
 
