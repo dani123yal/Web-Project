@@ -7,7 +7,7 @@
         <h2 runat="server" id="ordId">Order ID: </h2>
         
         <br />
-        <h2 runat="server" id="ttl">Total Amount of Order: <%= total.ToString()%></h2>
+        <h2 runat="server" id="ttl">Total Amount of Order: </h2>
         <h3>It will be delivered to your doorstep in 3 days</h3>
     </div>
 
