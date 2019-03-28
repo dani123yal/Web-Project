@@ -21,7 +21,7 @@ namespace Bata
             }
             else
             {
-                Response.Redirect("HomePage.aspx");
+                //Response.Redirect("HomePage.aspx");
             }
         }
     }

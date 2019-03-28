@@ -33,6 +33,7 @@ namespace Bata
 
             Text1.Value = (string)Session["credential"];
             Text1.Disabled = true;
+
         }
 
         protected void Button1_Click(object sender, EventArgs e)

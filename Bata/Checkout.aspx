@@ -7,35 +7,29 @@
         <a href="Cart.aspx" class="btn btn-danger">
             <i class="fa fa-arrow-circle-left"></i> Back to Cart
         </a>
-    <div class="row ">
-    <div class="form_wrapper " >
-  <div class="form_container ">
+    <div class="row">
+    <div class="form_wrapper" style="width:42%;">
     <div class="title_container">
       <h2>Shipment Information</h2>
     </div>
     <div class="clearfix">
       <div class="" >
-
            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-   <input id="Text1" type="text" placeholder="Enter Username" runat=server /> </div>
+                <input id="Text1" type="text" placeholder="Enter Username" runat=server /> </div>
            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
               <input id="Text2" type="text" placeholder="Enter shipment address" runat=server required/>
-</div>
+            </div>
 
    
 
            </div>
     </div>
-
-    </div>
-    </div>
-        </div>
-
+      
     <h2>Your Order:</h2>
     <br />
     <asp:Repeater id="cart" runat="server" >
         <HeaderTemplate>
-            <table id="tbl" style="top:50px;" border="1" cellpadding="30">
+            <table id="tbl" class="table" style="top:50px;" border="1" cellpadding="30">
                <thead>
                     <td>
                         Name
@@ -81,6 +75,11 @@
         </FooterTemplate>
     </asp:Repeater>
         <input type="submit" id="Btn" runat="server" value="Confirm Order" class="btn btn-danger" onserverclick="Button1_Click" style="align-items:center" />
+    </div>
+        </div>
+
+    
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>

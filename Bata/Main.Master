@@ -75,6 +75,8 @@
                     <div class="dropdown-divider"></div>
                     <div class="text-center">
                         <button type="button" class="btn btn-primary" runat="server" onserverclick="loginCred">Sign in</button>
+                        <br />
+                        <a href="Registration.aspx" style="color:crimson">Not Registered</a>
                     </div>
                     
                 </div>
@@ -249,10 +251,16 @@ var prevScrollpos = window.pageYOffset;
         }
 
         window.setTimeout(function() {
-    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+    $("#msg").fadeTo(500, 0).slideUp(500, function(){
         $(this).remove(); 
     });
-}, 4000);
+        }, 4000);
+
+        window.setTimeout(function() {
+    $("#msgg").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+}, 6000);
 </script>
     <script type="text/javascript">
         $(document).ready( function () {
