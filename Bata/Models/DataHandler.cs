@@ -9,8 +9,6 @@ namespace Bata.Models
 {
     public class DataHandler
     {
-        private SqlConnection con;
-        private SqlConnection con1;
         private SqlConnection con2;
         private SqlDataAdapter da;
         private SqlCommand cmd;
@@ -82,6 +80,49 @@ namespace Bata.Models
             }
 
             return null;
+        }
+
+        public DataTable getHistory(string id)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                con2.Open();
+                string query = "select cast(ordId as varchar(10)) + '_' + cast(userId as varchar(10)) as OrdNo,userId,ordId,ordAddress,ordDate,ordStatus, total from orders where userId ="+id+" order by ordNo desc";
+                SqlCommand cmd = new SqlCommand(query, con2);
+
+                da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                con2.Close();
+                return dt;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("error" + e.ToString());
+
+            }
+        }
+
+
+        public DataTable getHistoryDetails(string id)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                con2.Open();
+                string query = "select * from orderDetail inner join Shoes on orderDetail.shoeId = Shoes.shoeId where ordId ="+id;
+                SqlCommand cmd = new SqlCommand(query, con2);
+
+                da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                con2.Close();
+                return dt;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("error" + e.ToString());
+
+            }
         }
     }
 }

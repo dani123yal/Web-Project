@@ -22,6 +22,10 @@ namespace Bata
             {
                 pr = (List<Product>)Session["cart"];
 
+                if (pr == null)
+                {
+                }
+
                 cart.DataSource = pr;
                 cart.DataBind();
                 //pr.RemoveAt(ind);
