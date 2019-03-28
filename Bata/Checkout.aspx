@@ -1,16 +1,35 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Checkout.aspx.cs" Inherits="Bata.Checkout" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="Content/ship.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cover" runat="server">
-        <a href="Cart.aspx" class="btn btn-info">
+        <a href="Cart.aspx" class="btn btn-danger">
             <i class="fa fa-arrow-circle-left"></i> Back to Cart
         </a>
-    <h1>Enter Shipment Information</h1>
+    <div class="row ">
+    <div class="form_wrapper " >
+  <div class="form_container ">
+    <div class="title_container">
+      <h2>Shipment Information</h2>
+    </div>
+    <div class="clearfix">
+      <div class="" >
 
-    Username<input id="Text1" type="text" runat=server  />
-    <br />
-    Shipment Address<input id="Text2" type="text" runat=server required/>
-    <br />
+           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+   <input id="Text1" type="text" placeholder="Enter Username" runat=server /> </div>
+           <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+              <input id="Text2" type="text" placeholder="Enter shipment address" runat=server required/>
+</div>
+
+   
+
+           </div>
+    </div>
+
+    </div>
+    </div>
+        </div>
 
     <h2>Your Order:</h2>
     <br />
@@ -61,7 +80,7 @@
             </table>
         </FooterTemplate>
     </asp:Repeater>
-        <input type="submit" id="Btn" runat="server" value="Confirm Order" class="btn-danger" onserverclick="Button1_Click" style="align-items:center" />
+        <input type="submit" id="Btn" runat="server" value="Confirm Order" class="btn btn-danger" onserverclick="Button1_Click" style="align-items:center" />
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

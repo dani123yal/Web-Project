@@ -48,7 +48,7 @@
         </FooterTemplate>
     </asp:Repeater>
 
-    <asp:Button ID="Button1" runat="server" Text="Checkout" CssClass="btn-primary" OnClick="Button1_Click" style="align-items:center" />
+    <asp:Button ID="Button1" runat="server" Text="Checkout" CssClass="btn-primary btn btn-danger" OnClick="Button1_Click" style="align-items:center" />
 
 
     <hr style="border-top:1px dashed red;"/>
