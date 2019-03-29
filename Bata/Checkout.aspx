@@ -74,7 +74,7 @@
             </table>
         </FooterTemplate>
     </asp:Repeater>
-        <input type="submit" id="Btn" runat="server" value="Confirm Order" class="btn btn-danger" onserverclick="Button1_Click" style="align-items:center" />
+        <input type="submit" id="Btn" runat="server" value="Confirm Order" class="btn btn-danger" onserverclick="Button1_Click" style="align-items:center;" />
     </div>
         </div>
 
