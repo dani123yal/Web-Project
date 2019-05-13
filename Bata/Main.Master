@@ -62,7 +62,7 @@
         
       <li class="nav-item dropdown" id="loginDD" runat="server">
             <a class="nav-link" href="#" style="padding-left:20px" id="signInDropDown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login</a>
-            <div class="dropdown-menu login dropdown-menu-xl-left animated fadeInDown"  aria-labelledby="signInDropDown" role="menu">
+            <div class="dropdown-menu login dropdown-menu-xl-right animated fadeInDown"  aria-labelledby="signInDropDown" role="menu">
                 <div class="px-3 py-4">
                     <div class="form-group">
                     <label for="exampleDropdownFormEmail2">Email address</label>
